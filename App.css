@@ -1,0 +1,275 @@
+body{
+  display: grid;
+  color:ivory;
+  background-color: rgb(0, 0, 59);
+}
+.Skills{
+  transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  top: 11vh;
+  font-family: poppins;
+  position:relative;
+  text-shadow: 0px 0px 10px rgb(0, 0, 59);
+  color: rgb(0, 0, 92);
+  margin:calc(5px + 2vw);
+  margin-bottom: calc(5px + 2vw) !important;
+  font-size: calc(1px + 3.6vw);
+}
+.Skills ul:nth-child(1):hover{
+  font-size: calc(3px + 4vw);
+  transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: yellowgreen;
+  text-shadow: 0px 0px 10px yellowgreen;
+}
+.Skills ul:nth-child(2):hover{
+  font-size: calc(3px + 4vw);
+  transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: rgb(255, 0, 0);
+  text-shadow: 0px 0px 10px rgb(204, 140, 3);
+}
+.Skills ul:nth-child(3):hover{
+  font-size: calc(3px + 4vw);
+  transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: blueviolet;
+  text-shadow: 0px 0px 10px blue;
+}
+
+.header{
+  z-index: 1;
+  text-align:center; color:hsl(357, 100%, 50%);
+   font-family:Helvetica;
+   -webkit-font-smoothing: antialiased;
+   max-height: 10vmin;
+   margin-left: 10px;
+   text-shadow: 0px 0px 10px red;
+   animation: animation 20s ease-in infinite;
+   transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header:hover{
+  transition:2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: coral;
+  text-shadow: 0px 0px 10px darkgoldenrod;
+
+}
+.App-header {
+  background-color: rgb(0, 0, 59);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: white;
+}
+
+.my-photo{
+  z-index: 2;
+  margin-top:30vh ;
+  position: absolute;
+  background-image: url(./myphoto.png);
+    width: calc(20vw);
+    border-radius: 50%;
+    height: 20vw;
+    background-size: cover;
+    left: 65vw;
+    filter: drop-shadow(20px 10px 0px blue);
+    transform: translate(calc(30vw / 2), calc(30vw / 2));
+    animation: photo 2s ease-in-out forwards;
+    object-fit: cover;
+}
+.connect{
+  z-index: 2;
+  font-size: 10px;
+  margin-top: calc(10px + 3vw) !important;
+  margin: 5vw;
+  position: relative;
+  width: max-content;
+}
+.connect img{
+  position: relative;
+  max-width: 3vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .connect img{
+    max-width: 5vw;
+  }
+  [class*="Skills"]{
+    margin: 10px;
+  }
+  [class*="My-name"] {
+    align-items: center;
+    margin: 2vw;
+  }
+  [class*="my-photo"] {
+    position: relative;
+    margin-top: 10vh;
+    left: 22vw;
+    width: 50vw;
+    height: 50vw;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .my-photo{
+    animation: photo forwards 6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes photo{
+  from{
+    box-shadow: 0px 0px 0px 0px blueviolet;
+  }
+  To{
+    box-shadow: 10px 10px 3px  blueviolet;
+  }
+}
+@keyframes animation{
+  from{
+    filter: hue-rotate(0deg);
+    text-shadow: 0px 0px 10px hsl(357, 100%, 50%);
+  }
+  To{
+    filter:hue-rotate(360deg);
+    text-shadow: 0px 0px 10px hsl(0, 100%, 50%);
+  }
+}
+.name path:nth-child(11) {
+  stroke-dasharray: 520px;
+  stroke-dashoffset: 520px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(1) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(2) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(3) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(4) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(5) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(6) {
+  stroke-dasharray: 750px;
+  stroke-dashoffset: 750px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(7) {
+  stroke-dasharray: 750px;
+  stroke-dashoffset: 750px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(8) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(9) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+
+.name path:nth-child(10) {
+  stroke-dasharray: 510px;
+  stroke-dashoffset: 510px;
+  -webkit-animation: fill 2s ease-in forwards;
+          animation: fill 2s ease-in forwards;
+}
+@-webkit-keyframes fill {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes out-fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes out-fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+.name {
+  /* Harsh Malik */
+  max-width:calc(100px + 50vw);
+  -webkit-animation: out-fill 0.5s ease forwards 1s;
+          animation: out-fill 0.5s ease forwards 1s;
+}
+.My-name{
+  margin: 4px;
+  top:3vh;
+  left:5vw;
+  position: relative;
+  max-width:calc(100px + 55vw);
+}
+@keyframes photo {
+  from {
+    -webkit-transform: translate(-20px, -20px);
+            transform: translate(-20px, -20px);
+    opacity: 0%;
+    -webkit-filter: drop-shadow(0px 0px 0px blue);
+            filter: drop-shadow(0px 0px 0px blue);
+  }
+  to {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 100%;
+    -webkit-filter: drop-shadow(20px 10px 0px blue);
+            filter: drop-shadow(20px 10px 0px blue);
+  }
+}
